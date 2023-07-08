@@ -1,4 +1,4 @@
-Sat Jul  8 02:38:53 2023
+Sat Jul  8 18:41:15 2023
 Linux-6.3.9-1-default-x86_64-with-glibc2.2.5
 Ren'Py 7.5.3.22090809
  
@@ -7,15 +7,14 @@ Bootstrap to the start of init.init took 0.07s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.02s
-Loading script took 0.59s
+Loading script took 0.53s
 Loading save slot metadata. took 0.00s
 Loading persistent took 0.00s
 Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
-Running init code took 0.11s
+Running init code took 0.12s
 Loading analysis data took 0.05s
 Analyze and compile ATL took 0.06s
 Index archives took 0.00s
-Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
 Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -23,26 +22,11 @@ Initial gc. took 0.04s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.06s
+Init translation took 0.05s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: 'AMD'
-Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.3.9-1-default)'
-Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
-Could not open 'cache/shaders.txt':
-Maximum texture size: 4096x4096
+Save bytecode. took 0.05s

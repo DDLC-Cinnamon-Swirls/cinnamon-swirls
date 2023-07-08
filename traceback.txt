@@ -3,19 +3,19 @@
 While running game code:
   File "game/script.rpy", line 55, in script call
     call prolouge_1_start
-  File "game/story/prologue/story-prolouge-ch1.rpy", line 17, in script
-    show sayori 2l at t zorder 1
-  File "game/story/prologue/story-prolouge-ch1.rpy", line 17, in <module>
-    show sayori 2l at t zorder 1
-NameError: name 't' is not defined
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 61, in script
+    show sayori 1a at t112 zorder 2
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 61, in <module>
+    show sayori 1a at t112 zorder 2
+NameError: name 't112' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 55, in script call
     call prolouge_1_start
-  File "game/story/prologue/story-prolouge-ch1.rpy", line 17, in script
-    show sayori 2l at t zorder 1
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 61, in script
+    show sayori 1a at t112 zorder 2
   File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ast.py", line 1408, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ast.py", line 1367, in show_imspec
@@ -24,11 +24,11 @@ Full traceback:
     return py_eval_bytecode(code, globals, locals)
   File "/home/landon/modding/renpy-7.5.3-sdk/renpy/python.py", line 1085, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/story/prologue/story-prolouge-ch1.rpy", line 17, in <module>
-    show sayori 2l at t zorder 1
-NameError: name 't' is not defined
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 61, in <module>
+    show sayori 1a at t112 zorder 2
+NameError: name 't112' is not defined
 
 Linux-6.3.9-1-default-x86_64-with-glibc2.2.5 x86_64
 Ren'Py 7.5.3.22090809
 Cinnamon Swirls 4.2.2-Py2
-Sat Jul  8 02:29:52 2023
+Sat Jul  8 18:15:26 2023
