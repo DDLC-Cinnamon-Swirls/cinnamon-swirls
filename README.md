@@ -1,1 +1,2 @@
-Hi chat I have no clue what happened to all these other files so im gonna make this change and see if that unclogs github or whatever the fuck please help me im sleep deprived i literally did not sleep at all last night i have been up for probably 36 consecutive hours
+# Cinnamon Swirls
+A modification for Doki Doki literature club
