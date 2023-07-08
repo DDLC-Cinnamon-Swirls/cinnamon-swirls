@@ -3,6 +3,9 @@
 # This is the main script that Ren'Py calls upon to start
 # your mod's story!
 
+## I will pull a Sayori if this does not work
+# - Landon
+
 label start:
 
     # This label configures the anticheat number for the game after Act 1.
