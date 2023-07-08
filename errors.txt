@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/story/prologue/story-prolouge-ch1.rpy", line 18: expected 'image_name_component' not found.
+    hide
+        ^
+
+Ren'Py Version: Ren'Py 7.5.3.22090809
+Sat Jul  8 02:34:07 2023

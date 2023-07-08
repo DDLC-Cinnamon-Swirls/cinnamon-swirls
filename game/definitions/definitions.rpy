@@ -20,17 +20,17 @@ python early:
 
 init -3 python:
     ## Dynamic Super Position (DSP)
-    # DSP is a feature in where the game upscales the positions of assets 
+    # DSP is a feature in where the game upscales the positions of assets
     # with higher resolutions (1080p).
     # This is just simple division from Adobe, implemented in Python.
     def dsp(orig_val):
         ceil = not isinstance(orig_val, float)
-        dsp_scale = config.screen_width / 1280.0 
+        dsp_scale = config.screen_width / 1280.0
         if ceil: return math.ceil(orig_val * dsp_scale)
         # since `absolute * float` -> `float`
         # we wanna keep the same type
         return type(orig_val)(orig_val * dsp_scale)
-    
+
     # This makes evaluating the value faster
     renpy.pure(dsp)
 
@@ -56,12 +56,12 @@ init python:
     ## More Android Gestures
     # This variable makes a keymap for the history screen.
     if renpy.android:
-        config.underlay.append(renpy.Keymap(history = ShowMenu("history"))) 
+        config.underlay.append(renpy.Keymap(history = ShowMenu("history")))
 
         # These commented variables sets all keybinds from Rollback to History.
         # config.keymap["rollback"] = []
         # config.keymap["history"] = [ 'K_PAGEUP', 'repeat_K_PAGEUP', 'K_AC_BACK', 'mousedown_4' ]
-    
+
     # These variable declarations adjusts the mapping for certain actions in-game.
     config.keymap['game_menu'].remove('mouseup_3')
     config.keymap['hide_windows'].append('mouseup_3')
@@ -71,7 +71,7 @@ init python:
 
     # This variable declaration registers the music poem channel for the poem sharing music.
     renpy.music.register_channel("music_poem", mixer="music", tight=True)
-    
+
     # This function gets the postition of the music playing in a given channel.
     def get_pos(channel='music'):
         pos = renpy.music.get_pos(channel=channel)
@@ -92,7 +92,7 @@ init python:
             try: os.remove(config.basedir + "/characters/" + name + ".chr")
             except: pass
 
-    # These functions restores all the character CHR files to the characters folder 
+    # These functions restores all the character CHR files to the characters folder
     # given the playthrough number in the mod and list of characters to restore.
     def restore_character(names):
         if not isinstance(names, list):
@@ -115,7 +115,7 @@ init python:
             restore_character(["monika"])
         else:
             restore_character(["sayori", "natsuki", "yuri"])
-    
+
     # This function is obsolete as all characters now restores only
     # relevant characters to the characters folder.
     def restore_relevant_characters():
@@ -143,7 +143,7 @@ init python:
 #   t1 - This tells Ren'Py the label of the music/sound file being declared.
 #   <loop 22.073> - This tells Ren'Py to loop the music/sound to this position when the song completes.
 #   "bgm/1.ogg" - This tells Ren'Py the path of the music/sound file to use.
-# Example: 
+# Example:
 #   define audio.t2 = "bgm/2.ogg"
 
 define audio.t1 = "<loop 22.073>bgm/1.ogg" # Doki Doki Literature Club! - Main Theme
@@ -151,7 +151,7 @@ define audio.t2 = "<loop 4.499>bgm/2.ogg" # Ohayou Sayori! - Sayori Theme
 define audio.t2g = "bgm/2g.ogg"
 define audio.t2g2 = "<from 4.499 loop 4.499>bgm/2.ogg"
 define audio.t2g3 = "<loop 4.492>bgm/2g2.ogg"
-define audio.t3 = "<loop 4.618>bgm/3.ogg" # Main Theme - In Game 
+define audio.t3 = "<loop 4.618>bgm/3.ogg" # Main Theme - In Game
 define audio.t3g = "<to 15.255>bgm/3g.ogg"
 define audio.t3g2 = "<from 15.255 loop 4.618>bgm/3.ogg"
 define audio.t3g3 = "<loop 4.618>bgm/3g2.ogg"
@@ -199,7 +199,7 @@ define audio.fall = "sfx/fall.ogg"
 # To define a new color background, declare a new image statement like in this example:
 #     image blue = "X" where X is your color hex i.e. '#158353'
 # To define a new background, declare a new image statement like this instead:
-#     image bg bathroom = "mod_assets/bathroom.png" 
+#     image bg bathroom = "mod_assets/bathroom.png"
 
 image black = "#000000"
 image dark = "#000000e4"
@@ -211,6 +211,7 @@ image end:
     "gui/end.png"
 
 image bg residential_day = "bg/residential.png" # Start of DDLC BG
+image bg streets_day = "mod_assets/streets_day.jpg"
 image bg class_day = "bg/class.png" # The classroom BG
 image bg corridor = "bg/corridor.png" # The hallway BG
 image bg club_day = "bg/club.png" # The club BG
@@ -875,7 +876,7 @@ image natsuki 5bx = im.Composite((960, 960), (18, 22), "natsuki/x.png", (0, 0), 
 image natsuki 5by = im.Composite((960, 960), (18, 22), "natsuki/y.png", (0, 0), "natsuki/3b.png")
 image natsuki 5bz = im.Composite((960, 960), (18, 22), "natsuki/z.png", (0, 0), "natsuki/3b.png")
 
-# These image definitions are left-overs of certain Natsuki expressions 
+# These image definitions are left-overs of certain Natsuki expressions
 # found in the original 1.0 release of DDLC.
 image natsuki 1 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/1t.png")
 image natsuki 2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/1t.png")
@@ -943,7 +944,7 @@ image n_moving_mouth:
         ease 0.2 xzoom 0.8
         repeat
 
-# These images show the Natsuki ghost sprite shown in the poemgame of 
+# These images show the Natsuki ghost sprite shown in the poemgame of
 # Act 2.
 image natsuki_ghost_blood:
     "#00000000"
@@ -1270,7 +1271,7 @@ image yuripupils:
 
 image yuri cuts = "yuri/cuts.png"
 
-# This image shows another glitched Yuri from Act 2. 
+# This image shows another glitched Yuri from Act 2.
 image yuri dragon:
     "yuri 3"
     0.25
@@ -1406,7 +1407,7 @@ image monika g1:
     xoffset 0 yoffset 0 zoom 1.00
     "monika 3"
 
-# This image transform shows Monika being glitched as she is 
+# This image transform shows Monika being glitched as she is
 # deleted in Act 3.
 image monika g2:
     block:
