@@ -5,6 +5,8 @@
 
 ## I will pull a Sayori if this does not work
 # - Landon
+# Just to confirm my testing, I have to modify this in the fork and then I can merge it into the main
+# Fuck github btw
 
 label start:
 
