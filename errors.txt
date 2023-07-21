@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story/prologue/story-prolouge-ch1.rpy", line 76: expected statement.
-    y at f42 "Welcome to the Literature Club. It's a pleasure meeting you."
-      ^
-
-File "game/story/prologue/story-prolouge-ch1.rpy", line 79: expected statement.
-    n 1c at f43 "Seriously? You brought a boy?"
-         ^
+File "game/story/prologue/story-prolouge-ch1.rpy", line 54: expected statement.
+    t_name = "???"
+           ^
 
 Ren'Py Version: Ren'Py 7.5.3.22090809
-Sat Jul  8 18:27:19 2023
+Fri Jul 21 19:51:21 2023
