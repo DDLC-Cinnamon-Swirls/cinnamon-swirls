@@ -1,5 +1,5 @@
-Sat Jul  8 18:41:15 2023
-Linux-6.3.9-1-default-x86_64-with-glibc2.2.5
+Fri Jul 21 19:49:18 2023
+Linux-6.4.3-1-default-x86_64-with-glibc2.2.5
 Ren'Py 7.5.3.22090809
  
 
@@ -7,26 +7,988 @@ Bootstrap to the start of init.init took 0.07s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.02s
-Loading script took 0.53s
+Loading script took 0.38s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+
+File "game/story/prologue/story-prolouge-ch1.rpy", line 53: expected statement.
+    t_name = "???"
+           ^
+DPI scale factor: 1.000000
+Interface start took 0.14s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4.80s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.02s
+Loading script took 0.32s
 Loading save slot metadata. took 0.00s
 Loading persistent took 0.00s
 Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
-Running init code took 0.12s
-Loading analysis data took 0.05s
+Running init code took 0.11s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/character.py", line 1248, in __call__
+    who = renpy.python.py_eval(who)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 't_name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+NameError: name 't_name' is not defined
+
+Full traceback:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/character.py", line 1248, in __call__
+    who = renpy.python.py_eval(who)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 't_name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+NameError: name 't_name' is not defined
+
+Full traceback:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/character.py", line 1248, in __call__
+    who = renpy.python.py_eval(who)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+NameError: name 't_name' is not defined
+
+While running game code:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+NameError: name 't_name' is not defined
+Resetting cache.
+Bootstrap to the start of init.init took 48.44s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.81s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.10s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 119.53s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.19s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+
+File "game/story/prologue/story-prolouge-ch1.rpy", line 54: expected statement.
+    t_name = "???"
+           ^
+DPI scale factor: 1.000000
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 122.12s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.18s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+
+File "game/story/prologue/story-prolouge-ch1.rpy", line 54: expected statement.
+    t_name = "???"
+           ^
+DPI scale factor: 1.000000
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 123.06s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.18s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+
+File "game/story/prologue/story-prolouge-ch1.rpy", line 54: expected statement.
+    t_name = "???"
+           ^
+DPI scale factor: 1.000000
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 130.77s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.18s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.11s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.06s
 Index archives took 0.00s
 Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.04s
+Initial gc. took 0.06s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.07s
 Build styles took 0.00s
 Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 209.41s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.80s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.10s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/character.py", line 1266, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/character.py", line 930, in do_display
+    **display_args)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/character.py", line 666, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/core.py", line 3912, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/core.py", line 2605, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 495, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/transform.py", line 747, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/image.py", line 506, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/image.py", line 309, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 627, in render
+    return cache.get(self, render=True)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 295, in get
+    surf = image.load()
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 846, in load
+    rv.blit(cache.get(im), pos)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 295, in get
+    surf = image.load()
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 720, in load
+    raise e
+IOError: Couldn't find file 'mod_assets/placeholder_characters/peter'.
+
+While loading <renpy.display.im.Composite object at 0x7f58b3b5d8d0>:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+IOError: Couldn't find file 'mod_assets/placeholder_characters/peter'.
+
+Full traceback:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ast.py", line 889, in execute
+    statement_name(stmt_name)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ast.py", line 47, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/exports.py", line 1657, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/core.py", line 2801, in do_with
+    clear=clear)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/core.py", line 3912, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/core.py", line 2605, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 495, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/transition.py", line 377, in render
+    bottom = render(self.old_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/transform.py", line 747, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/image.py", line 506, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/image.py", line 309, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 627, in render
+    return cache.get(self, render=True)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 295, in get
+    surf = image.load()
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 846, in load
+    rv.blit(cache.get(im), pos)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 295, in get
+    surf = image.load()
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 720, in load
+    raise e
+IOError: Couldn't find file 'mod_assets/placeholder_characters/peter'.
+
+While loading <renpy.display.im.Composite object at 0x7f58b3b5d8d0>:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
+    _window_show(auto=True)
+  File "renpy/common/000window.rpy", line 69, in _window_show
+    renpy.with_statement(trans)
+IOError: Couldn't find file 'mod_assets/placeholder_characters/peter'.
+Resetting cache.
+Bootstrap to the start of init.init took 232.37s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.80s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.10s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/character.py", line 1266, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/character.py", line 930, in do_display
+    **display_args)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/character.py", line 666, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/core.py", line 3912, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/core.py", line 2605, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 495, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/transform.py", line 747, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/image.py", line 506, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/image.py", line 309, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 627, in render
+    return cache.get(self, render=True)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 295, in get
+    surf = image.load()
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 846, in load
+    rv.blit(cache.get(im), pos)
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 295, in get
+    surf = image.load()
+  File "/home/landon/modding/renpy-7.5.3-sdk/renpy/display/im.py", line 720, in load
+    raise e
+IOError: Couldn't find file 'mod_assets/character_placeholders/peter'.
+
+While loading <renpy.display.im.Composite object at 0x7f58b26be610>:
+  File "game/script.rpy", line 55, in script call
+    call prolouge_1_start from _call_prolouge_1_start
+  File "game/story/prologue/story-prolouge-ch1.rpy", line 54, in script
+    t "yooo placeholder moment"
+IOError: Couldn't find file 'mod_assets/character_placeholders/peter'.
+Resetting cache.
+Bootstrap to the start of init.init took 250.81s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.81s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.11s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 308.42s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.81s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.10s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 323.86s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.81s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.11s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 345.24s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.10s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.07s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 354.70s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.81s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.10s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 362.70s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.80s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.11s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 376.67s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.79s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.10s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 383.07s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.80s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.11s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 404.58s
+Early init took 0.00s
+Loader init took 0.01s
+Loading error handling took 0.01s
+Loading script took 0.19s
+Loading save slot metadata. took 0.00s
+Loading persistent took 0.00s
+Faled to initialize steam: OSError('/home/landon/modding/renpy-7.5.3-sdk/lib/py2-linux-x86_64/libsteam_api.so: cannot open shared object file: No such file or directory',)
+Running init code took 0.11s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Backing up script files to '/home/landon/.renpy/backups/cinnamon-swirls-fork':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'AMD'
+Renderer: 'AMD Radeon RX 6750 XT (navi22, LLVM 16.0.6, DRM 3.52, 6.4.3-1-default)'
+Version: '4.6 (Compatibility Profile) Mesa 23.1.3'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1920, 1004) drawable=(1920, 1004)
+Maximum texture size: 4096x4096

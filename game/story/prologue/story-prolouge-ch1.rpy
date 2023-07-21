@@ -50,8 +50,8 @@ label prolouge_1_start:
     hide sayori
     scene bg class_day with wipeleft_scene
     play music t6 fadeout 2
-    "This is where the classroom scene would appear. It would introduce Toshiko (MC's close friend) and have a passing mention of other characters, to be introduced later"
-    "Todo: Add this!"
+    show toshiko at t11 zorder 2
+    t "now with somewhat correct positioning!"
     stop music fadeout 2.0
     scene bg corridor with wipeleft_scene
     "The school day is finally over. On a regular day, I would be heading home right about now. However, I made a promise to Sayori, and I don’t intend to go back on it."

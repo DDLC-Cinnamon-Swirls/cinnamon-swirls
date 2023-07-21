@@ -351,7 +351,7 @@ label splashscreen:
 
     if not persistent.lockdown_warning:
         if os.path.exists(config.gamedir + "/core/lockdown_check.rpy"):
-            call lockdown_check from _call_lockdown_check
+            call lockdown_check
         else:
             $ persistent.lockdown_warning = True
 
@@ -367,7 +367,7 @@ label splashscreen:
         if not persistent.has_chosen_language and translations:
 
             if _preferences.language is None:
-                call choose_language from _call_choose_language
+                call choose_language
         
         $ persistent.has_chosen_language = True
 

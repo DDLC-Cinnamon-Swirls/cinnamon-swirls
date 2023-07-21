@@ -1384,6 +1384,9 @@ image monika 4r = im.Composite((960, 960), (0, 0), "monika/2l.png", (0, 0), "mon
 image monika 5a = im.Composite((960, 960), (0, 0), "monika/3a.png")
 image monika 5b = im.Composite((960, 960), (0, 0), "monika/3b.png")
 
+## Placeholder Characters
+image toshiko = im.Composite((360, 600), (0, 0), "mod_assets/character_placeholders/peter.png")
+
 # This image transform shows a glitched Monika during a special poem.
 image monika g1:
     "monika/g1.png"
@@ -1435,7 +1438,6 @@ image monika g2:
 #   define e = DynamicCharacter('e_name', image='eileen', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 # To define a new character without assets, declare a character variable like this instead:
 #   define en = Character('Eileen & Nat', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-
 define narrator = Character(ctc="ctc", ctc_position="fixed")
 define mc = DynamicCharacter('player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define s = DynamicCharacter('s_name', image='sayori', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
@@ -1443,6 +1445,7 @@ define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suff
 define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define t = DynamicCharacter('t_name', image='toshiko', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 # This variable determines whether to allow the player to dismiss pauses.
 # By default this is set by config.developer which is normally set to false
@@ -1513,6 +1516,7 @@ default faint_effect = None
 # To define a default name make a character name variable like in this example:
 #   default e_name = "Eileen"
 
+default t_name = "Toshiko"
 default s_name = "Sayori"
 default m_name = "Monika"
 default n_name = "Natsuki"

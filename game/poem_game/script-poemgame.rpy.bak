@@ -329,7 +329,7 @@ label poem(transition=True):
 
     # Call the new poem eye scare label if we are in Act 2 and we yet seen eyes
     if persistent.playthrough == 2 and persistent.seen_eyes == None and renpy.random.randint(0,5) == 0:
-        call poem_eye_scare from _call_poem_eye_scare
+        call poem_eye_scare
 
     $ config.allow_skipping = True
     $ allow_skipping = True
