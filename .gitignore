@@ -1,3 +1,5 @@
 **/*.rpyc
+**/*.rpyb
 **/*.rpa
 errors.txt
+log.txt
